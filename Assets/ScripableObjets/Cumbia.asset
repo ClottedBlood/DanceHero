@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundDatta
   animationName: Cumbia
   songName: Cumbia
+  noteChart: {fileID: 4900000, guid: 1f0858eb20f69ae4baf31ee3840366a2, type: 3}
+  speed: 300

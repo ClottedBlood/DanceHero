@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundDatta
   animationName: Thanos
   songName: Thanos
+  noteChart: {fileID: 4900000, guid: 047b6d857f06ea74eaea6364a77f7708, type: 3}
+  speed: 300

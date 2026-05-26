@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SoundData", menuName = "Scriptable Objects/SoundData")]
-public class SoundData : ScriptableObject
+[CreateAssetMenu(fileName = "SongData", menuName = "Scriptable objects/SongData")]
+public class SongData : ScriptableObject
 {
     public string animationName;
 
