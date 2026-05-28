@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
+
 public class SongManager : MonoBehaviour
 {
    [SerializeField]
@@ -17,6 +19,9 @@ public class SongManager : MonoBehaviour
    [SerializeField]
 
    private NotesManager notesManager;
+   [SerializeField]
+
+   private string failAnimationName = "Hit";
 
    private SoundData currentSongData;
 
@@ -39,5 +44,31 @@ public class SongManager : MonoBehaviour
     SoundManager.instance.PlayMusic(currentSongData.songName);
     notesManager.StartNoteChart(currentSongData.noteChart, currentSongData.speed);
     onSongStart?.Invoke();
+   }
+
+   public void Fail()
+   {
+    StopAllCoroutines();
+    StartCoroutine(Failcoroutine());
+   }
+
+   private IEnumerator Failcoroutine()
+   {
+    characterAnimator.Play(failAnimationName, 0, 0f);
+    yield return null;
+    yield return    new WaitForSeconds(characterAnimator.GetCurrentAnimatorStateInfo(0).length);
+    characterAnimator.Play(currentSongData.animationName, 0, 0f);
+   }
+
+   public void WinSong()
+   {
+    StopAllCoroutines();
+    characterAnimator.Play("Win", 0, 0f);
+   }
+
+   public void LoseSong()
+   {
+    StopAllCoroutines();
+    characterAnimator.Play("Lose", 0, 0f);
    }
 }
