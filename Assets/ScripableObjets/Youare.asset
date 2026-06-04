@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0e119676d20c274f96816cba9e702a0, type: 3}
+  m_Name: Youare
+  m_EditorClassIdentifier: Assembly-CSharp::SoundData
+  animationName: Youare
+  songName: Youare
+  noteChart: {fileID: 4900000, guid: b9fd6495b36c3b74e8eaed51fbcb89f6, type: 3}
+  speed: 300
