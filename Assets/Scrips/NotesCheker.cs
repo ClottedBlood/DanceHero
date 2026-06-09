@@ -37,7 +37,7 @@ public class NotesCheker : MonoBehaviour
         {
             if (activeNotes.Contains(collision.gameObject))
             {
-                activeNotes.Contains(collision.gameObject);
+                activeNotes.Remove(collision.gameObject);
             }
         }
     }
